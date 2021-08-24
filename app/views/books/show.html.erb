@@ -2,7 +2,7 @@
   <body>
     <% flash.each do |key, msg| -%>
       <%= content_tag :div, msg, class: key %>
-    <% end -%>
+    <% end %>
 
     <p>Title:<%= @book.title %></p>
     <p>Body:<%= @book.body %></p>
