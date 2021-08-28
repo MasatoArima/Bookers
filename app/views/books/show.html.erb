@@ -1,11 +1,11 @@
 <html>
   <body>
     <% flash.each do |key, msg| -%>
-      <%= content_tag :div, msg, class: key %>
+      <%= content_tag :p, msg, class: key %>
     <% end %>
 
-    <p>Title:<%= @book.title %></p>
-    <p>Body:<%= @book.body %></p>
+    <p><strong>Title:</strong><%= @book.title %></p>
+    <p><strong>Body:</strong><%= @book.body %></p>
     <%= link_to "Edit", edit_book_path(@book.id) %>
     |
     <%= link_to "Back", books_path %>
